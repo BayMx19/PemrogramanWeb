@@ -149,54 +149,53 @@
             </form>
             <?php
 
-$celsius 	= 	$_POST['celcius'];
-$suhu 		= 	$_POST['pilihsuhu'];
-$konversi 	= 	$_POST['konversi'];
+                $celsius 	= 	$_POST['celcius'];
+                $suhu 		= 	$_POST['pilihsuhu'];
+                $konversi 	= 	$_POST['konversi'];
 
 
-if(isset($konversi)){
+                if(isset($konversi)){
 
-    switch ($suhu){
+                    switch ($suhu){
 
-        case "Celsius":
-        echo floatval($celsius);
-        break;
+                        case "Celsius":
+                        echo "Hasil Konversi : " .floatval($celsius) . " derajat Celcius";
+                        break;
 
-        case "Reamur":
-        echo floatval($celsius * (4/5));
-        break;
+                        case "Reamur":
+                        echo "Hasil Konversi : " .floatval($celsius * (4/5)) . " derajat Reamur";
+                        break;
 
-        case "Farenheit":
-        echo floatval($celsius * (9/5) + 32);
-        break;
+                        case "Farenheit":
+                        echo "Hasil Konversi : " .floatval($celsius * (9/5) + 32) . " derajat Fahrenheit";
+                        break;
 
-        case "Kelvin":
-        echo floatval($celsius + 273);
-        break;
+                        case "Kelvin":
+                        echo "Hasil Konversi : " .floatval($celsius + 273) . " derajat Kelvin";
+                        break;
 
-        case "Rankine":
-        echo floatval(($celsius + 273)*9/5);
-        break;
+                        case "Rankine":
+                        echo "Hasil Konversi : " .floatval(($celsius + 273)*9/5) . " derajat Rankine";
+                        break;
 
-        case "Delisle":
-        echo floatval(100-($celsius*3/2));
-        break;
+                        case "Delisle":
+                        echo "Hasil Konversi : " .floatval(100-($celsius*3/2)) . " derajat Delisle";
+                        break;
 
-        case "Romer":
-        echo floatval($celsius * 21/40 * 7.5);
-        break;
+                        case "Romer":
+                        echo "Hasil Konversi : " .floatval($celsius * 21/40 * 7.5) . " derajat Romer";
+                        break;
 
-        case "Newton":
-        echo floatval($celsius * 33/100);
-        break;
+                        case "Newton":
+                        echo "Hasil Konversi : " .floatval($celsius * 33/100) . " Newton";
+                        break;
 
-    }
-}else{
-    echo "ANDA HARUS MEMILIH";
-}
+                    }
+                }else{
+                    echo "ANDA HARUS MEMILIH";
+                }
 
-
-?>
+            ?>
             
             </div>
 
